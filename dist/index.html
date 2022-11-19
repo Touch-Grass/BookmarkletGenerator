@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Bookmarklet Maker</title>
+</head>
+<body>
+
+<div>
+  <label for='js_code'>Javascript Code</label>
+  <input class='js_code' id='js_code' type='text' />
+</div>
+
+<div>
+  <label for='scripts'>External Scripts</label>
+  <input class='js_scripts' id='scripts' type='text' />
+  <button class='add_external_scripts'>Add</button>
+</div>
+
+<div>
+  <label for='styles'>External Styles</label>
+  <input class='js_styles' id='styles' type='text' />
+  <button class='add_external_styles'>Add</button>
+</div>
+
+<button class='generate_button'>Generate</button>
+
+<div class='output_wrapper'>
+  <label for='output'>Output</label>
+  <textarea class='output' cols='30' id='output' rows='10'></textarea>
+</div>
+
+<script src='ts/script.js'></script>
+</body>
+</html>
