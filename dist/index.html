@@ -3,31 +3,41 @@
 <head>
   <meta charset='UTF-8'>
   <title>Bookmarklet Maker</title>
+  <link href='css/main.css' rel='stylesheet'>
 </head>
 <body>
 
-<div>
-  <label for='js_code'>Javascript Code</label>
-  <input class='js_code' id='js_code' type='text' />
-</div>
+<div class='main_wrapper'>
+  <div class='js_code_wrapper'>
+    <label for='js_code'>Javascript Code</label>
+    <textarea class='js_code' cols='20' id='js_code' rows='5'></textarea>
 
-<div>
-  <label for='scripts'>External Scripts</label>
-  <input class='js_scripts' id='scripts' type='text' />
-  <button class='add_external_scripts'>Add</button>
-</div>
+    <span>
+      <button class='generate_button'>Generate</button>
+      <button class='reset_button'>Reset</button>
+    </span>
+  </div>
 
-<div>
-  <label for='styles'>External Styles</label>
-  <input class='js_styles' id='styles' type='text' />
-  <button class='add_external_styles'>Add</button>
-</div>
+  <div>
+    <label for='scripts'>External Scripts</label>
+    <input class='js_scripts' id='scripts' type='text' />
+    <button class='add_external_scripts'>Add</button>
 
-<button class='generate_button'>Generate</button>
+    <ul class='scripts_list'></ul>
+  </div>
 
-<div class='output_wrapper'>
-  <label for='output'>Output</label>
-  <textarea class='output' cols='30' id='output' rows='10'></textarea>
+  <div>
+    <label for='styles'>External Styles</label>
+    <input class='js_styles' id='styles' type='text' />
+    <button class='add_external_styles'>Add</button>
+
+    <ul class='styles_list'></ul>
+  </div>
+
+  <div class='output_wrapper'>
+    <label for='output'>Output</label>
+    <textarea class='output' cols='30' id='output' rows='10'></textarea>
+  </div>
 </div>
 
 <script src='ts/script.js'></script>
